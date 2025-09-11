@@ -39,6 +39,6 @@ df = pd.DataFrame(list(collection),columns=["Instrument ID","Latitude","Longitud
 
 df.sort_values('Instrument ID', inplace=True)
 
-df.to_csv('./data/coordinates.csv',index=False)
+df.to_csv('./data/3dMainCoordinates.csv',index=False)
 
     
