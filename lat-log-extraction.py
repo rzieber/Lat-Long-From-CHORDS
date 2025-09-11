@@ -4,12 +4,12 @@ from json import loads
 import json
 import pandas as pd
 
-portal = 'https://3d-calibration.chordsrt.com'
+portal = 'https://3d-zambia.chordsrt.com'
 #inst_id=[
    # '18'
 #]
 user_email='mode2512@colorado.edu'
-api_key='NSCyySKfE_oKBjSQQaov'
+api_key='v_rRvx7cAMLK6fSXzAkv'
 start='2025-09-01T00:00'
 end='2025-09-01T23:59'
 
@@ -39,6 +39,6 @@ df = pd.DataFrame(list(collection),columns=["Instrument ID","Latitude","Longitud
 
 df.sort_values('Instrument ID', inplace=True)
 
-df.to_csv('./data/CalibrationCoordinates.csv',index=False)
+df.to_csv('./data/ZambiaCoordinates.csv',index=False)
 
     
